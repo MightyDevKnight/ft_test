@@ -11,7 +11,7 @@ jobs:
       - name: Transform token to style
         run: |
           style-dictionary build
-      - name: Upload
-        with:
-          path: './themes'
+#       - name: Upload
+#         with:
+#           path: './themes'
 #           destination: 
