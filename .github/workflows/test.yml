@@ -1,0 +1,17 @@
+name: Generate
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Transform token to style
+        run: |
+          style-dictionary build
+      - name: Upload
+        with:
+          path: './themes'
+#           destination: 
