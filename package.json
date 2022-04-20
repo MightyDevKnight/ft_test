@@ -1,0 +1,10 @@
+{
+  "name": "sd-convert",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "style-dictionary": "^3.7.0",
+    "token-transformer": "^0.0.17"
+  }
+}
