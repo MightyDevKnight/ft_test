@@ -1,0 +1,5 @@
+{
+    "dark": ["core", "detail", "divider", "field-label", "heading", "help-text", "icon-button", "link", "menu-item", "radio", "semantic", "switch", "tag", "text-field"],
+    "light": ["alert-banner", "avatar", "body", "button", "checkbox", "code", "core", "detail"],
+    "gray": ["checkbox", "code", "core"],
+}
