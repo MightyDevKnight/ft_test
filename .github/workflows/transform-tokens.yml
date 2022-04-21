@@ -1,0 +1,21 @@
+name: Transform tokens
+
+on: push
+
+jobs:
+  setup_environment:
+    name: Transform the Figma Tokens to Style Dictionary.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install yarn
+        run: "npm install -g yarn"
+
+      - name: Install node modules
+        run: "yarn"
+
+  ft_2_sd:
+    needs: setup_environment
+    runs-on: ubuntu-latest
+    setps:
+      - name: Transform FT format to SD format
+        run: "node ./node_modules/tokens-transformer/index.js ./tokens/tokens.json ./sd/dark.json core,detail,divider,field-label,heading,help-text,icon-button,link,menu-item,radio,semantic,switch,tag,text-field"

@@ -2,9 +2,16 @@
   "name": "sd-convert",
   "version": "0.0.1",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "ft2sd": "node ./node_modules/token-transformer/index.js ./tokens/tokens.json ./sd/output.json",
+    "transform": "node build.js",
+    "build": "yarn ft2sd & yarn transform"
+  },
   "dependencies": {
+    "color2k": "^2.0.0",
+    "expr-eval": "^2.0.2",
+    "glob": "^8.0.1",
     "style-dictionary": "^3.7.0",
-    "token-transformer": "^0.0.17"
+    "token-transformer": "^0.0.20"
   }
 }
